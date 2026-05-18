@@ -306,3 +306,430 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== SECTION À PROPOS ===== */
+.apropos {
+  padding: 80px 20px;
+  background: #1a1a1a;
+}
+
+.apropos-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* IMAGE */
+.apropos-image-wrapper {
+  position: relative;
+}
+
+.apropos-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.apropos-badge-image {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #c8a96e; /* ta couleur accent dorée */
+  border-radius: 10px;
+  padding: 16px 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.apropos-badge-annee {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.apropos-badge-ville {
+  display: block;
+  font-size: 0.8rem;
+  color: #1a1a1a;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* CONTENU */
+.apropos-label {
+  display: inline-block;
+  color: #c8a96e;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.apropos-titre {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.apropos-texte {
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-size: 0.97rem;
+}
+
+/* VALEURS */
+.apropos-valeurs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0 32px;
+}
+
+.apropos-valeur {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.apropos-valeur-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: rgba(200, 169, 110, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8a96e;
+  font-size: 0.9rem;
+}
+
+.apropos-valeur-titre {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px;
+}
+
+.apropos-valeur-texte {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.apropos-cta {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .apropos-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .apropos-image {
+    height: 280px;
+  }
+
+  .apropos-badge-image {
+    bottom: -16px;
+    right: 16px;
+  }
+
+  .apropos-titre {
+    font-size: 1.7rem;
+  }
+
+  .apropos-valeurs {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== SECTION CONTACT ===== */
+.contact {
+  padding: 80px 20px;
+  background: #111;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-intro {
+  color: #aaa;
+  font-size: 0.97rem;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* CARDS INFOS */
+.contact-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #2a2a2a;
+}
+
+.contact-card-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  background: rgba(200, 169, 110, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8a96e;
+  font-size: 0.95rem;
+}
+
+.contact-card-titre {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.contact-card-texte {
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* HORAIRES */
+.contact-horaires {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-horaire-ligne {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.83rem;
+}
+
+.contact-horaire-jour {
+  color: #888;
+}
+
+.contact-horaire-heure {
+  color: #c8a96e;
+  font-weight: 600;
+}
+
+/* BOUTON WHATSAPP */
+.contact-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+.contact-whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.contact-whatsapp-btn svg {
+  font-size: 1.2rem;
+}
+
+/* CARTE */
+.contact-map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid #2a2a2a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map-wrapper {
+    min-height: 280px;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0d0d0d;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* BRAND */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c8a96e;
+  margin-bottom: 14px;
+}
+
+.footer-desc {
+  color: #777;
+  font-size: 0.87rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-social-btn:hover {
+  color: #c8a96e;
+  border-color: #c8a96e;
+}
+
+/* COLONNES */
+.footer-col-titre {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.footer-liens {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-lien {
+  color: #777;
+  font-size: 0.87rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a.footer-lien:hover {
+  color: #c8a96e;
+}
+
+/* BAS DE PAGE */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-bottom p {
+  color: #555;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-heart {
+  color: #e74c3c;
+  font-size: 0.75rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
